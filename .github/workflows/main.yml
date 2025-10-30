@@ -36,15 +36,15 @@ jobs:
           sleep 3 # wait for the server to boot
           
       - name: Run Cucumber tests with JSON output
-        run: bundle exec cucumber --format json --out reports/cucumber.json
+        run: bundle exec cucumber --format json --out public/cucumber.json
 
       - name: Generate HTML report
         run: |
           bundle exec ruby -e "
             require 'report_builder';
             ReportBuilder.configure do |config|
-              config.input_path = 'reports/cucumber.json';
-              config.report_path = 'reports/cucumber.html';
+              config.input_path = 'public/cucumber.json';
+              config.report_path = 'public/cucumber.html';
               config.report_types = [:html];
               config.color = 'blue';
             end;
@@ -55,7 +55,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cucumber-report
-          path: reports/cucumber.html
+          path: public/cucumber.html
 
       - name: Stop mock server
         if: always()
