@@ -35,8 +35,28 @@ jobs:
           bundle exec ruby mock_service/mock_hsi/mock_hsi_service.rb &
           sleep 3 # wait for the server to boot
           
-      - name: Run Cucumber tests
-        run: bundle exec cucumber
+      - name: Run Cucumber tests with JSON output
+        run: bundle exec cucumber --format json --out reports/cucumber.json
+
+      - name: Generate HTML report
+        run: |
+          bundle exec ruby -e "
+            require 'report_builder';
+            ReportBuilder.configure do |config|
+              config.input_path = 'reports/cucumber.json';
+              config.report_path = 'reports/cucumber.html';
+              config.report_types = [:html];
+              config.color = 'blue';
+            end;
+            ReportBuilder.build_report
+          "
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-report
+          path: reports/cucumber.html
+
 
       - name: Stop mock server
         if: always()
