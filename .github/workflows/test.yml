@@ -8,17 +8,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0' # Specify the Ruby version you want to use
 
+      - name: List gems managed by Bundler
+        run: bundle list
+  
       - name: Install dependencies
         run: |
           gem install bundler
           bundle install
+          
 
-      #- name: Run Cucumber tests
-      #  run: |
-      #    bundle exec cucumber
+
+
 
