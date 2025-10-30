@@ -1,0 +1,87 @@
+{
+  "externalId": "ADD_HSI_DV_1759251091",
+  "category": "SALES_NEW",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "202510",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NT202510"
+          },
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          }
+        ],
+        "relatedParty": [
+          {
+            "role": "fiberCo",
+            "property": [
+              {
+                "name": "addressLat",
+                "value": "-4"
+              },
+              {
+                "name": "addressExternalId",
+                "value": ""
+              },
+              {
+                "name": "addressLon",
+                "value": "-5"
+              },
+              {
+                "name": "fiberCoExternalId",
+                "value": "FF"
+              }
+            ]
+          }
+        ],
+        "place": [
+          {
+            "role": "installation address tst",
+            "property": [
+              {
+                "name": "addressId",
+                "value": "MI103986380-tst"
+              },
+              {
+                "name": "addressPolarisId",
+                "value": "P0000000000001667692-tst"
+              },
+              {
+                "name": "polarisAddressType",
+                "value": "NEW_TYPE"
+              }
+            ]
+          }
+        ]
+      },
+      "state": "Acknowledged"
+    }
+  ],
+  "id": "d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "href": "http://fulfillment-api.dev.nossis.prv.alpt.alticelabs.cloud/ptinovacao/serviceOrderingManagement/serviceOrder/d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "orderDate": "2025-10-08T17:37:16",
+  "state": "Acknowledged"
+}

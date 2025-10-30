@@ -1,0 +1,28 @@
+{
+  "externalId": "ADD_HSI_{{signature}}_{{service_id}}",
+  "category": "SALES_ORDER",
+  "orderItem": [
+    {
+      "id": "sftth-1",
+      "service": {
+        "id": "12345",
+        "serviceCharacteristic": [
+          { "name": "relatedServiceIdentifier", "value": "SI12345" },
+          { "name": "serviceIdentifier", "value": "NT12345" },
+          { "name": "downloadSpeed", "value": "500Mbps" },
+          { "name": "uploadSpeed", "value": "100Mbps" }
+        ],
+        "place": [
+          {
+            "role": "installation address",
+            "property": [
+              { "name": "addressId", "value": "MI103986380" },
+              { "name": "designation", "value": "AV" },
+              { "name": "polarisAddressType", "value": "I" }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+default:
+  --require features
+  --expand
+  --format pretty
+  --publish-quiet 
+  --format json --out public/report.json 
+  --format html --out public/test_report.html 
+  --format junit --out public/
+  --no-snippets

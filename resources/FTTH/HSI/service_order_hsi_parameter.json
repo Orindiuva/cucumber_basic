@@ -1,0 +1,25 @@
+{
+  "externalId": "ADD_HSI_{{signature}}_{{service_id}}",
+  "category": "SALES_ORDER",
+  "orderDate": "2025-10-08T17:37:16",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-1",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "101010",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          }
+        ]
+      }
+    }
+  ]
+}

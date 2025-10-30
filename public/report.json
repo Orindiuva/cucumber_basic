@@ -1,0 +1,776 @@
+[
+  {
+    "id": "create-hsi-service-sample",
+    "uri": "C:/Users/314014/RubymineProjects/GIT/NOSSISOLAT-3/features/FTTH/HSI/create_hsi_service_sample.feature",
+    "keyword": "Feature",
+    "name": "Create HSI Service Sample",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "create-hsi-service-sample;add-hsi-service---1",
+        "keyword": "Scenario",
+        "name": "ADD HSI Service - 1",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "client sends an ADD \"HSI\" POST request to \"/mock-hs1\" with parameters",
+            "line": 11,
+            "rows": [
+              {
+                "cells": [
+                  "path",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "category",
+                  "SALES_NEW"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].id",
+                  "sftth-NEW"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=relatedServiceIdentifier]",
+                  "SI{{service_id}}"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=downloadSpeed]",
+                  "100"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=uploadSpeed]",
+                  "50"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=serviceProfile]",
+                  "UZO"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].role",
+                  "installation address tst"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].property[name=polarisAddressType]",
+                  "NEW_TYPE"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].property[name=designation]",
+                  "TV"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].property[name=streetName]",
+                  "Fonte"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].property[name=doorNumber]",
+                  "2"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40698800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response should match the request payload",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1540300
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "print the updated JSON",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2404600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HSI_1",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35900
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38600
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-hsi-service-sample;add-hsi-service---2",
+        "keyword": "Scenario",
+        "name": "ADD HSI Service - 2",
+        "description": "",
+        "line": 30,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "client sends an ADD \"HSI\" POST request to \"/mock-hs1\" with parameters",
+            "line": 32,
+            "rows": [
+              {
+                "cells": [
+                  "path",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "category",
+                  "SALES_NEW"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].id",
+                  "sftth-NEW"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=downloadSpeed]",
+                  "100"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=uploadSpeed]",
+                  "50"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=serviceProfile]",
+                  "UZO"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=xpto]",
+                  "xpto"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place",
+                  "[]"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21218000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response should match the request payload",
+            "line": 41,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1693000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "print the updated JSON",
+            "line": 42,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2281500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HSI_2",
+            "line": 29
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25800
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-hsi-service-sample;add-hsi-service---3",
+        "keyword": "Scenario",
+        "name": "ADD HSI Service - 3",
+        "description": "",
+        "line": 45,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "client sends an ADD \"HSI\" POST request to \"/mock-hs1\" with parameters",
+            "line": 46,
+            "rows": [
+              {
+                "cells": [
+                  "path",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "category",
+                  "SALES_NEW"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].id",
+                  "sftth-NEW"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place",
+                  "[]"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18693500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response should match the request payload",
+            "line": 51,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2055900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "print the updated JSON",
+            "line": 52,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3973000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HSI_3",
+            "line": 44
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24200
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27400
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-hsi-service-sample;add-hsi-service---5",
+        "keyword": "Scenario",
+        "name": "ADD HSI Service - 5",
+        "description": "",
+        "line": 66,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "client sends an ADD \"HSI\" POST request to \"/mock-hs1\" with parameters",
+            "line": 68,
+            "rows": [
+              {
+                "cells": [
+                  "path",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "category",
+                  "SALES_NEWx"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].id",
+                  "sftth-NEWx"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=relatedServiceIdentifier]",
+                  "SI{{service_id}}"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=downloadSpeed]",
+                  "100x"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=uploadSpeed]",
+                  "50x"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.serviceCharacteristic[name=serviceProfile]",
+                  "UZOx"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].role",
+                  "installation addressx"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].property[name=addressId]",
+                  "xABC"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].property[name=addressPolarisId]",
+                  "PKX"
+                ]
+              },
+              {
+                "cells": [
+                  "orderItem[0].service.place[0].property[name=polarisAddressType]",
+                  "NEW_TYPEX"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27900600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response should match the request payload list errors",
+            "line": 80,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:104"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Validation failed: one or more errors occurred! (RuntimeError)\n./features/step_definitions/hsi_steps.rb:194:in `\"the response should match the request payload list errors\"'\n./features/FTTH/HSI/create_hsi_service_sample.feature:80:in `the response should match the request payload list errors'",
+              "duration": 6067300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HSI_5",
+            "line": 65
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2783800
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-hsi-service-sample;add-hsi-service---6",
+        "keyword": "Scenario",
+        "name": "ADD HSI Service - 6",
+        "description": "",
+        "line": 83,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "client sends an ADD \"HSI\" POST request to \"/mock-hs1\" with parameters",
+            "line": 84,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56272500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "print the updated JSON",
+            "line": 85,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3143400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HSI_6",
+            "line": 82
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44600
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-hsi-service-sample;add-hsi-service---7",
+        "keyword": "Scenario",
+        "name": "ADD HSI Service - 7",
+        "description": "",
+        "line": 88,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "client sends an ADD \"HSI\" POST request to \"/mock-hs1\" with parameters",
+            "line": 89,
+            "rows": [
+              {
+                "cells": [
+                  "template_name"
+                ]
+              },
+              {
+                "cells": [
+                  "service_order_hsi_parameter"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53853100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "print the updated JSON",
+            "line": 92,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2318500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HSI_7",
+            "line": 87
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27500
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-hsi-service-sample;add-hsi-service---8",
+        "keyword": "Scenario",
+        "name": "ADD HSI Service - 8",
+        "description": "",
+        "line": 95,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "client sends an ADD \"HSI\" POST request to \"/mock-hs1\" with parameters",
+            "line": 96,
+            "rows": [
+              {
+                "cells": [
+                  "template_name",
+                  "path",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "service_order_hsi_parameter",
+                  "category",
+                  "SALES_NEW"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "orderItem[0].id",
+                  "sftth-NEW"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "orderItem[0].service.serviceCharacteristic[name=relatedServiceIdentifier]",
+                  "SI{{service_id}}"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "orderItem[0].service.serviceCharacteristic[name=downloadSpeed]",
+                  "100"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "orderItem[0].service.serviceCharacteristic[name=uploadSpeed]",
+                  "50"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "orderItem[0].service.serviceCharacteristic[name=serviceProfile]",
+                  "UZO"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67313000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response should match the request payload",
+            "line": 104,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1448500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "print the updated JSON",
+            "line": 105,
+            "match": {
+              "location": "features/step_definitions/hsi_steps.rb:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2258900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HSI_8",
+            "line": 94
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25800
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

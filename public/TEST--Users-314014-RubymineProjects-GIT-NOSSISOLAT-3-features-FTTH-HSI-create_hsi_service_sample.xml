@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="7" time="0.575957" name="Create HSI Service Sample">
+<testcase classname="Create HSI Service Sample" name="ADD HSI Service - 1" time="0.066025">
+  <system-out>
+    <![CDATA[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+3.6.2
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxx - request - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_{{signature}}_{{service_id}}",
+  "category": "SALES_NEW",
+  "orderDate": "2025-10-08T17:37:16",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": 202510,
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": 100
+          },
+          {
+            "name": "uploadSpeed",
+            "value": 50
+          },
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NA202510"
+          }
+        ],
+        "place": [
+          {
+            "property": [
+              {
+                "name": "polarisAddressType",
+                "value": "NEW_TYPE"
+              },
+              {
+                "name": "designation",
+                "value": "TV"
+              },
+              {
+                "name": "streetName",
+                "value": "Fonte"
+              },
+              {
+                "name": "doorNumber",
+                "value": 2
+              }
+            ],
+            "role": "installation address tst"
+          }
+        ]
+      }
+    }
+  ]
+}
+xxxxxxxxxxxxxxxxxxxxx - response - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_DV_1759251091",
+  "category": "SALES_NEW",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "202510",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NT202510"
+          },
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          }
+        ],
+        "relatedParty": [
+          {
+            "role": "fiberCo",
+            "property": [
+              {
+                "name": "addressLat",
+                "value": "-4"
+              },
+              {
+                "name": "addressExternalId",
+                "value": ""
+              },
+              {
+                "name": "addressLon",
+                "value": "-5"
+              },
+              {
+                "name": "fiberCoExternalId",
+                "value": "FF"
+              }
+            ]
+          }
+        ],
+        "place": [
+          {
+            "role": "installation address tst",
+            "property": [
+              {
+                "name": "addressId",
+                "value": "MI103986380-tst"
+              },
+              {
+                "name": "addressPolarisId",
+                "value": "P0000000000001667692-tst"
+              },
+              {
+                "name": "polarisAddressType",
+                "value": "NEW_TYPE"
+              }
+            ]
+          }
+        ]
+      },
+      "state": "Acknowledged"
+    }
+  ],
+  "id": "d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "href": "http://fulfillment-api.dev.nossis.prv.alpt.alticelabs.cloud/ptinovacao/serviceOrderingManagement/serviceOrder/d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "orderDate": "2025-10-08T17:37:16",
+  "state": "Acknowledged"
+}
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Create HSI Service Sample" name="ADD HSI Service - 2" time="0.081044">
+  <system-out>
+    <![CDATA[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+3.6.2
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxx - request - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_{{signature}}_{{service_id}}",
+  "category": "SALES_NEW",
+  "orderDate": "2025-10-08T17:37:16",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": 202510,
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": 100
+          },
+          {
+            "name": "uploadSpeed",
+            "value": 50
+          },
+          {
+            "name": "xpto",
+            "value": "xpto"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NA202510"
+          }
+        ],
+        "place": [
+
+        ]
+      }
+    }
+  ]
+}
+xxxxxxxxxxxxxxxxxxxxx - response - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_DV_1759251091",
+  "category": "SALES_NEW",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "202510",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NT202510"
+          },
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          }
+        ],
+        "relatedParty": [
+          {
+            "role": "fiberCo",
+            "property": [
+              {
+                "name": "addressLat",
+                "value": "-4"
+              },
+              {
+                "name": "addressExternalId",
+                "value": ""
+              },
+              {
+                "name": "addressLon",
+                "value": "-5"
+              },
+              {
+                "name": "fiberCoExternalId",
+                "value": "FF"
+              }
+            ]
+          }
+        ],
+        "place": [
+          {
+            "role": "installation address tst",
+            "property": [
+              {
+                "name": "addressId",
+                "value": "MI103986380-tst"
+              },
+              {
+                "name": "addressPolarisId",
+                "value": "P0000000000001667692-tst"
+              },
+              {
+                "name": "polarisAddressType",
+                "value": "NEW_TYPE"
+              }
+            ]
+          }
+        ]
+      },
+      "state": "Acknowledged"
+    }
+  ],
+  "id": "d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "href": "http://fulfillment-api.dev.nossis.prv.alpt.alticelabs.cloud/ptinovacao/serviceOrderingManagement/serviceOrder/d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "orderDate": "2025-10-08T17:37:16",
+  "state": "Acknowledged"
+}
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Create HSI Service Sample" name="ADD HSI Service - 3" time="0.073029">
+  <system-out>
+    <![CDATA[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+3.6.2
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxx - request - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_{{signature}}_{{service_id}}",
+  "category": "SALES_NEW",
+  "orderDate": "2025-10-08T17:37:16",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": 202510,
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NA202510"
+          }
+        ],
+        "place": [
+
+        ]
+      }
+    }
+  ]
+}
+xxxxxxxxxxxxxxxxxxxxx - response - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_DV_1759251091",
+  "category": "SALES_NEW",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "202510",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NT202510"
+          },
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          }
+        ],
+        "relatedParty": [
+          {
+            "role": "fiberCo",
+            "property": [
+              {
+                "name": "addressLat",
+                "value": "-4"
+              },
+              {
+                "name": "addressExternalId",
+                "value": ""
+              },
+              {
+                "name": "addressLon",
+                "value": "-5"
+              },
+              {
+                "name": "fiberCoExternalId",
+                "value": "FF"
+              }
+            ]
+          }
+        ],
+        "place": [
+          {
+            "role": "installation address tst",
+            "property": [
+              {
+                "name": "addressId",
+                "value": "MI103986380-tst"
+              },
+              {
+                "name": "addressPolarisId",
+                "value": "P0000000000001667692-tst"
+              },
+              {
+                "name": "polarisAddressType",
+                "value": "NEW_TYPE"
+              }
+            ]
+          }
+        ]
+      },
+      "state": "Acknowledged"
+    }
+  ],
+  "id": "d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "href": "http://fulfillment-api.dev.nossis.prv.alpt.alticelabs.cloud/ptinovacao/serviceOrderingManagement/serviceOrder/d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "orderDate": "2025-10-08T17:37:16",
+  "state": "Acknowledged"
+}
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Create HSI Service Sample" name="ADD HSI Service - 5" time="0.070887">
+  <failure message="failed ADD HSI Service - 5" type="failed">
+    <![CDATA[Scenario: ADD HSI Service - 5
+
+Then the response should match the request payload list errors
+
+Message:
+]]>
+    <![CDATA[Validation failed: one or more errors occurred! (RuntimeError)
+./features/step_definitions/hsi_steps.rb:194:in `"the response should match the request payload list errors"'
+./features/FTTH/HSI/create_hsi_service_sample.feature:80:in `the response should match the request payload list errors']]>
+  </failure>
+  <system-out>
+    <![CDATA[[31m[2025-10-27 09:09:08] ERROR: xxxxxxxxxxx - Errors List - xxxxxxxxxxx[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: SALES_NEWx Got: SALES_NEW[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: sftth-NEWx Got: sftth-NEW[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: UZOx Got: UZO[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: 100x Got: 100[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: 50x Got: 50[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: installation addressx Got: installation address tst[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: xABC Got: MI103986380-tst[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: PKX Got: P0000000000001667692-tst[0m
+[31m[2025-10-27 09:09:08] ERROR: Expected value: NEW_TYPEX Got: NEW_TYPE[0m
+[31m[2025-10-27 09:09:08] ERROR: xxxxxxxxxxx - Errors List - xxxxxxxxxxx[0m
+[31m[2025-10-27 09:09:08] ERROR: 
+[HOOK] Erro registrado no arquivo logs/errors.log[0m
+[31m[2025-10-27 09:09:08] ERROR: 
+===============================
+Erro no teste
+------------- 
+DATA Execução: [2025-10-27 09:09:08] 
+Feature : Create HSI Service Sample
+Cenário : ADD HSI Service - 5
+Tags    : @HSI_5
+Local   : C:/Users/314014/RubymineProjects/GIT/NOSSISOLAT-3/features/FTTH/HSI/create_hsi_service_sample.feature:66
+Status  : failed
+Erro    : Expected: , Actual: "
+Cenário ADD HSI Service - 5 executado em 0.05 segundos
+-------------------------------
+Backtrace:
+C:/Users/314014/RubymineProjects/GIT/NOSSISOLAT-3/features/step_definitions/hsi_steps.rb:194:in `"the response should match the request payload list errors"'
+C:/Users/314014/RubymineProjects/GIT/NOSSISOLAT-3/features/FTTH/HSI/create_hsi_service_sample.feature:80:in `the response should match the request payload list errors'
+===============================
+[0m
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Create HSI Service Sample" name="ADD HSI Service - 6" time="0.080254">
+  <system-out>
+    <![CDATA[xxxxxxxxxxxxxxxxxxxxx - request - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_{{signature}}_{{service_id}}",
+  "category": "SALES_ORDER",
+  "orderDate": "2025-10-08T17:37:16",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-1",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "{{service_id}}",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          }
+        ],
+        "place": [
+
+        ]
+      }
+    }
+  ]
+}
+xxxxxxxxxxxxxxxxxxxxx - response - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_DV_1759251091",
+  "category": "SALES_NEW",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "202510",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NT202510"
+          },
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          }
+        ],
+        "relatedParty": [
+          {
+            "role": "fiberCo",
+            "property": [
+              {
+                "name": "addressLat",
+                "value": "-4"
+              },
+              {
+                "name": "addressExternalId",
+                "value": ""
+              },
+              {
+                "name": "addressLon",
+                "value": "-5"
+              },
+              {
+                "name": "fiberCoExternalId",
+                "value": "FF"
+              }
+            ]
+          }
+        ],
+        "place": [
+          {
+            "role": "installation address tst",
+            "property": [
+              {
+                "name": "addressId",
+                "value": "MI103986380-tst"
+              },
+              {
+                "name": "addressPolarisId",
+                "value": "P0000000000001667692-tst"
+              },
+              {
+                "name": "polarisAddressType",
+                "value": "NEW_TYPE"
+              }
+            ]
+          }
+        ]
+      },
+      "state": "Acknowledged"
+    }
+  ],
+  "id": "d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "href": "http://fulfillment-api.dev.nossis.prv.alpt.alticelabs.cloud/ptinovacao/serviceOrderingManagement/serviceOrder/d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "orderDate": "2025-10-08T17:37:16",
+  "state": "Acknowledged"
+}
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Create HSI Service Sample" name="ADD HSI Service - 7" time="0.114046">
+  <system-out>
+    <![CDATA[xxxxxxxxxxxxxxxxxxxxx - request - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_{{signature}}_{{service_id}}",
+  "category": "SALES_ORDER",
+  "orderDate": "2025-10-08T17:37:16",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-1",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "101010",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          }
+        ]
+      }
+    }
+  ]
+}
+xxxxxxxxxxxxxxxxxxxxx - response - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_DV_1759251091",
+  "category": "SALES_NEW",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "202510",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NT202510"
+          },
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          }
+        ],
+        "relatedParty": [
+          {
+            "role": "fiberCo",
+            "property": [
+              {
+                "name": "addressLat",
+                "value": "-4"
+              },
+              {
+                "name": "addressExternalId",
+                "value": ""
+              },
+              {
+                "name": "addressLon",
+                "value": "-5"
+              },
+              {
+                "name": "fiberCoExternalId",
+                "value": "FF"
+              }
+            ]
+          }
+        ],
+        "place": [
+          {
+            "role": "installation address tst",
+            "property": [
+              {
+                "name": "addressId",
+                "value": "MI103986380-tst"
+              },
+              {
+                "name": "addressPolarisId",
+                "value": "P0000000000001667692-tst"
+              },
+              {
+                "name": "polarisAddressType",
+                "value": "NEW_TYPE"
+              }
+            ]
+          }
+        ]
+      },
+      "state": "Acknowledged"
+    }
+  ],
+  "id": "d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "href": "http://fulfillment-api.dev.nossis.prv.alpt.alticelabs.cloud/ptinovacao/serviceOrderingManagement/serviceOrder/d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "orderDate": "2025-10-08T17:37:16",
+  "state": "Acknowledged"
+}
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Create HSI Service Sample" name="ADD HSI Service - 8" time="0.090671">
+  <system-out>
+    <![CDATA[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+3.6.2
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxx - request - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_{{signature}}_{{service_id}}",
+  "category": "SALES_NEW",
+  "orderDate": "2025-10-08T17:37:16",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": 202510,
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "downloadSpeed",
+            "value": 100
+          },
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": 50
+          },
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NA202510"
+          }
+        ]
+      }
+    }
+  ]
+}
+xxxxxxxxxxxxxxxxxxxxx - response - xxxxxxxxxxxxxxxxxxxxxxxx
+{
+  "externalId": "ADD_HSI_DV_1759251091",
+  "category": "SALES_NEW",
+  "requesterCallback": "http://fulfillment-swe-responses:8080",
+  "orderItem": [
+    {
+      "id": "sftth-NEW",
+      "action": "add",
+      "serviceSpecification": {
+        "id": "CFS.HSI"
+      },
+      "service": {
+        "id": "202510",
+        "category": "CFS",
+        "serviceCharacteristic": [
+          {
+            "name": "relatedServiceIdentifier",
+            "value": "SI202510"
+          },
+          {
+            "name": "serviceIdentifier",
+            "value": "NT202510"
+          },
+          {
+            "name": "serviceProfile",
+            "value": "UZO"
+          },
+          {
+            "name": "downloadSpeed",
+            "value": "100"
+          },
+          {
+            "name": "uploadSpeed",
+            "value": "50"
+          }
+        ],
+        "relatedParty": [
+          {
+            "role": "fiberCo",
+            "property": [
+              {
+                "name": "addressLat",
+                "value": "-4"
+              },
+              {
+                "name": "addressExternalId",
+                "value": ""
+              },
+              {
+                "name": "addressLon",
+                "value": "-5"
+              },
+              {
+                "name": "fiberCoExternalId",
+                "value": "FF"
+              }
+            ]
+          }
+        ],
+        "place": [
+          {
+            "role": "installation address tst",
+            "property": [
+              {
+                "name": "addressId",
+                "value": "MI103986380-tst"
+              },
+              {
+                "name": "addressPolarisId",
+                "value": "P0000000000001667692-tst"
+              },
+              {
+                "name": "polarisAddressType",
+                "value": "NEW_TYPE"
+              }
+            ]
+          }
+        ]
+      },
+      "state": "Acknowledged"
+    }
+  ],
+  "id": "d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "href": "http://fulfillment-api.dev.nossis.prv.alpt.alticelabs.cloud/ptinovacao/serviceOrderingManagement/serviceOrder/d74795ed-4d72-40a3-b2ca-c7ea3353e1ae3",
+  "orderDate": "2025-10-08T17:37:16",
+  "state": "Acknowledged"
+}
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

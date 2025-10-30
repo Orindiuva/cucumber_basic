@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="0.164735" name="Create HSI Service Sample">
+<testcase classname="Create HSI Service Sample" name="ADD HSI Service - 2" time="0.164735">
+  <failure message="failed ADD HSI Service - 2" type="failed">
+    <![CDATA[Scenario: ADD HSI Service - 2
+
+Then the response should match the request payload
+
+Message:
+]]>
+    <![CDATA[<"100x"> expected but was
+<"100">.
+
+diff:
+- 100x
+?    -
++ 100 (Test::Unit::AssertionFailedError)
+./features/step_definitions/hsi_steps.rb:67:in `block (2 levels) in <top (required)>'
+./features/step_definitions/hsi_steps.rb:61:in `each'
+./features/step_definitions/hsi_steps.rb:61:in `"the response should match the request payload"'
+./features/FTTH/HSI/create_hsi_service_sample.feature:41:in `the response should match the request payload']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>
