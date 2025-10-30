@@ -52,11 +52,10 @@ jobs:
           "
 
       - name: Upload HTML report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cucumber-report
           path: reports/cucumber.html
-
 
       - name: Stop mock server
         if: always()
