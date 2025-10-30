@@ -13,10 +13,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0' # Specify the Ruby version you want to use
-
+      - name: Show current directory
+        run: pwd
       - name: List gems managed by Bundler
         run: gem list
   
+
 
 
 
