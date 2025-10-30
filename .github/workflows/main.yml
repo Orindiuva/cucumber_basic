@@ -32,7 +32,7 @@ jobs:
       - name: Start mock server
         run: |
           echo "Starting mock server..."
-          ruby mock_service/mock_hsi/mock_hsi_service.rb &
+          bundle exec ruby mock_service/mock_hsi/mock_hsi_service.rb &
           sleep 3 # wait for the server to boot
           
       - name: Run Cucumber tests
