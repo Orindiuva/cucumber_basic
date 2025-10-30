@@ -1,0 +1,25 @@
+# Copilot: create a GitHub Action that runs Ruby Cucumber tests on every push
+name: Cucumber Tests
+on: [push, pull_request]
+jobs:
+  cucumber-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0' # Specify the Ruby version you want to use
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Run Cucumber tests
+        run: |
+          bundle exec cucumber
+
+
