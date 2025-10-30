@@ -1,8 +1,8 @@
 name: Run Cucumber Tests
 
 on:
-  workflow_dispatch:
-
+ workflow_dispatch:
+ 
 jobs:
   cucumber-tests:
     runs-on: ubuntu-latest
@@ -17,8 +17,26 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true  # Speeds up installs between runs
 
+      - name: Show current directory
+        run: pwd
+        
+      - name: List files in current directory
+        run: ls -la
+        
       - name: Install dependencies
         run: bundle install
 
+      - name: Start mock server
+        run: |
+          echo "Starting mock server..."
+          ruby mock_service/mock_hsi/mock_hsi_service.rb &
+          sleep 3 # wait for the server to boot
+          
       - name: Run Cucumber tests
         run: bundle exec cucumber
+
+      - name: Stop mock server
+        if: always()
+        run: |
+          echo "Stopping mock server..."
+          pkill -f mock_service/mock_hsi/mock_hsi_service.rb || true        
