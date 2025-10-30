@@ -26,8 +26,8 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Show all gem list 
-        run: gem list
+      - name: List gems managed by Bundler
+        run: bundle list
         
       - name: Start mock server
         run: |
