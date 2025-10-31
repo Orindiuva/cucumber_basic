@@ -45,24 +45,24 @@ jobs:
          echo "Running Cucumber with tag: ${{ github.event.inputs.tag }}"
          bundle exec cucumber --format json --out public/cucumber.json --tags ${{ github.event.inputs.tag }}
 
-      - name: Generate HTML report
-        run: |
-          bundle exec ruby -e "
-            require 'report_builder';
-            ReportBuilder.configure do |config|
-              config.input_path = 'public/cucumber.json';
-              config.report_path = 'public/cucumber.html';
-              config.report_types = [:html];
-              config.color = 'blue';
-            end;
-            ReportBuilder.build_report
-          "
+      # - name: Generate HTML report
+      #   run: |
+      #     bundle exec ruby -e "
+      #       require 'report_builder';
+      #       ReportBuilder.configure do |config|
+      #         config.input_path = 'public/cucumber.json';
+      #         config.report_path = 'public/cucumber.html';
+      #         config.report_types = [:html];
+      #         config.color = 'blue';
+      #       end;
+      #       ReportBuilder.build_report
+      #     "
 
-      - name: Upload HTML report
-        uses: actions/upload-artifact@v4
-        with:
-          name: cucumber-report
-          path: public/cucumber.html
+      # - name: Upload HTML report
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: cucumber-report
+      #     path: public/cucumber.html
 
       - name: Stop mock server
         if: always()
