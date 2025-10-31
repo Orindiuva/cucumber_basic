@@ -9,15 +9,15 @@ on:
     default: "@sanity"
     type: choice
     options:
-      - "@HSI-1"
-      - "@HSI-2"
-      - "@HSI-3"
-      - "@HSI-4"
-      - "@HSI-5"
-      - "@HSI-6"
-      - "@HSI-7"
-      - "@HSI-8"
-      - "@HSI-9"    
+      - "@HSI_1"
+      - "@HSI_2"
+      - "@HSI_3"
+      - "@HSI_4"
+      - "@HSI_5"
+      - "@HSI_6"
+      - "@HSI_7"
+      - "@HSI_8"
+      - "@HSI_9"    
  
 jobs:
   cucumber-tests:
