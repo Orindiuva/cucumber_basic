@@ -2,6 +2,11 @@ name: Run Cucumber Tests
 
 on:
  workflow_dispatch:
+  inputs:
+   tag:
+    description: "Cucumber tag to run"
+    required: true
+    default: "@smoke"
  
 jobs:
   cucumber-tests:
@@ -36,7 +41,9 @@ jobs:
           sleep 3 # wait for the server to boot
           
       - name: Run Cucumber tests with JSON output
-        run: bundle exec cucumber --format json --out public/cucumber.json
+        run: | 
+         echo "Running Cucumber with tag: ${{ github.event.inputs.tag }}"
+         bundle exec cucumber --format json --out public/cucumber.json --tags ${{ github.event.inputs.tag }}
 
       - name: Generate HTML report
         run: |
